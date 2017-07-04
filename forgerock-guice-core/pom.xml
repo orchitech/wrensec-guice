@@ -12,6 +12,7 @@
   information: "Portions Copyrighted [year] [name of copyright owner]".
 
   Copyright 2014 ForgeRock AS.
+  Portions Copyright 2017 Wren Security.
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
@@ -25,8 +26,8 @@
     <artifactId>forgerock-guice-core</artifactId>
     <version>1.2.0</version>
 
-    <name>ForgeRock Guice Core</name>
-    <description>ForgeRock Guice Core Library</description>
+    <name>Wren Security Guice Core</name>
+    <description>Wren Security Guice Core Library</description>
 
     <dependencies>
         <dependency>
