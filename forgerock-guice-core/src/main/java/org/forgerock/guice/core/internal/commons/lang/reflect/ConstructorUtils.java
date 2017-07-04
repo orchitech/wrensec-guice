@@ -16,8 +16,10 @@
  */
 /*
  * Portions Copyright 2014 ForgeRock AS.
- * Copied from commons-lang:commons-lang:2.6 org.apache.commons.lang.reflect.ConstructUtils with un-required methods
- * removed.
+ * Portions Copyright 2017 Wren Security.
+ *
+ * Copied from commons-lang:commons-lang:2.6 org.apache.commons.lang.reflect.ConstructUtils with
+ * un-required methods removed.
  */
 package org.forgerock.guice.core.internal.commons.lang.reflect;
 
@@ -25,7 +27,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Modifier;
 
 /**
- * <p> Utility reflection methods focussed on constructors, modelled after {@link MethodUtils}. </p>
+ * Utility reflection methods focussed on constructors, modelled after {@link MemberUtils}.
  *
  * <h3>Known Limitations</h3>
  * <h4>Accessing Public Constructors In A Default Access Superclass</h4>
