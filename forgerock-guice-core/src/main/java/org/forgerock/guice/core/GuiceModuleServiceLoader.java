@@ -12,8 +12,8 @@
  * information: "Portions copyright [year] [name of copyright owner]".
  *
  * Copyright 2014 ForgeRock AS.
+ * Portions Copyright 2017 Wren Security.
  */
-
 package org.forgerock.guice.core;
 
 import com.google.inject.AbstractModule;
@@ -26,15 +26,17 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Will find and load all classes which extend the Guice AbstractModule class and that are annotated with the
- * provided annotation by using the Java ServiceLoader framework.
- * <br/>
- * To register an AbstractModule with the ServiceLoader framework, create a file named,
- * "com.google.inject.AbstractModule", under META-INF/services with a new line delimited list of the fully
- * qualified names of the subtypes, in your jar/project, to be used to configure the Guice injector.
- * <br/>
- * Any AbstractModule subtypes which are registered with the Java ServiceLoader by are not annotated with the
- * provided annotation will be ignored and will not be included in the returned set of Guice Modules.
+ * Will find and load all classes which extend the Guice AbstractModule class and that are annotated
+ * with the provided annotation by using the Java ServiceLoader framework.
+ *
+ * <p>To register an AbstractModule with the ServiceLoader framework, create a file named,
+ * "com.google.inject.AbstractModule", under META-INF/services with a new line delimited list of the
+ * fully qualified names of the subtypes, in your jar/project, to be used to configure the Guice
+ * injector.
+ *
+ * <p>Any AbstractModule subtypes which are registered with the Java ServiceLoader by are not
+ * annotated with the provided annotation will be ignored and will not be included in the returned
+ * set of Guice Modules.
  *
  * @see java.util.ServiceLoader
  */

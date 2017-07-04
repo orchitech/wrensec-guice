@@ -12,12 +12,14 @@
  * information: "Portions copyright [year] [name of copyright owner]".
  *
  * Copyright 2013-2014 ForgeRock AS.
+ * Portions Copyright 2017 Wren Security.
  */
 
 /**
  * This package contains classes for the ForgeRock Guice implementation.
- * <br/>
- * Provides a mechanism for dynamically loading AbstractModules at runtime to configure a single Guice Injector
- * which is made available by the {@link org.forgerock.guice.core.InjectorHolder} singleton.
+ *
+ * <p>Provides a mechanism for dynamically loading AbstractModules at runtime to configure a single
+ * Guice Injector which is made available by the {@link org.forgerock.guice.core.InjectorHolder}
+ * singleton.
  */
 package org.forgerock.guice.core;
