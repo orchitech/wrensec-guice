@@ -12,8 +12,8 @@
  * information: "Portions copyright [year] [name of copyright owner]".
  *
  * Copyright 2014 ForgeRock AS.
+ * Portions Copyright 2017 Wren Security.
  */
-
 package org.forgerock.guice.core;
 
 import com.google.inject.Module;
@@ -22,11 +22,12 @@ import java.lang.annotation.Annotation;
 import java.util.Set;
 
 /**
- * Implementations of this interface are responsible for finding and loading all Guice module classes which are
- * annotated with the provide module annotation.
- * <br/>
- * Implementations MUST only return subtypes of the Guice Module interface which are annotated with the provided
- * annotation. Any modules NOT annotated with the provided annotation MUST be ignored.
+ * Implementations of this interface are responsible for finding and loading all Guice module
+ * classes which are annotated with the provide module annotation.
+ *
+ * <p>Implementations MUST only return subtypes of the Guice Module interface which are annotated
+ * with the provided annotation. Any modules NOT annotated with the provided annotation MUST be
+ * ignored.
  */
 public interface GuiceModuleLoader {
 

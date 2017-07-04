@@ -12,22 +12,22 @@
  * information: "Portions copyright [year] [name of copyright owner]".
  *
  * Copyright 2013-2014 ForgeRock AS.
+ * Portions Copyright 2017 Wren Security.
  */
-
 package org.forgerock.guice.core;
 
 import java.lang.annotation.Annotation;
 
 /**
- * A thread-safe singleton holding the configuration information on how the Guice framework finds Guice Modules to
- * configure the Guice Injector instance.
- * <br/>
- * This singleton holds the Module annotation that all Guice Modules, that should be used to configure the injector,
- * MUST be annotated with. And the implementation of the {@link GuiceModuleLoader} that will be used to find and load
- * the module classes.
- * <br/>
- * By default the module annotation is configured to be {@link GuiceModule} and the GuiceModuleLoader implementation is
- * configured to be {@link GuiceModuleServiceLoader}.
+ * A thread-safe singleton holding the configuration information on how the Guice framework finds
+ * Guice Modules to configure the Guice Injector instance.
+ *
+ * <p>This singleton holds the Module annotation that all Guice Modules, that should be used to
+ * configure the injector, MUST be annotated with. And the implementation of the
+ * {@link GuiceModuleLoader} that will be used to find and load the module classes.
+ *
+ * <p>By default the module annotation is configured to be {@link GuiceModule} and the
+ * GuiceModuleLoader implementation is configured to be {@link GuiceModuleServiceLoader}.
  * These configurations can be changed by calling, {@link #setModuleAnnotation(Class)} and
  * {@link #setGuiceModuleLoader(GuiceModuleLoader)},respectively.
  */
