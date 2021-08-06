@@ -24,13 +24,14 @@ import java.lang.annotation.Annotation;
 import java.util.HashSet;
 import java.util.Set;
 
-import com.google.inject.AbstractModule;
-import com.google.inject.Module;
 import org.forgerock.guice.core.test.TestModule4;
 import org.forgerock.guice.core.test.TestModule5;
 import org.forgerock.guice.core.test.TestModule6;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import com.google.inject.AbstractModule;
+import com.google.inject.Module;
 
 public class GuiceModuleServiceLoaderTest {
 

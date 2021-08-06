@@ -22,6 +22,7 @@
         <groupId>org.wrensecurity.commons</groupId>
         <artifactId>wrensec-guice</artifactId>
         <version>3.0.0-SNAPSHOT</version>
+        <relativePath>../</relativePath>
     </parent>
 
     <artifactId>wrensec-guice-servlet</artifactId>

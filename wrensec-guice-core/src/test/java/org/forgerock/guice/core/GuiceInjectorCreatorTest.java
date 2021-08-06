@@ -21,10 +21,11 @@ import static org.assertj.core.api.Assertions.assertThat;
 import java.util.Collections;
 import java.util.Set;
 
-import com.google.inject.Injector;
-import com.google.inject.Module;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import com.google.inject.Injector;
+import com.google.inject.Module;
 
 public class GuiceInjectorCreatorTest {
 

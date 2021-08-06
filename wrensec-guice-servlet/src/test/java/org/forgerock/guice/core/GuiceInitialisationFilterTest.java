@@ -16,16 +16,17 @@
 
 package org.forgerock.guice.core;
 
-import com.google.inject.Stage;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.BDDMockito.given;
+import static org.mockito.Mockito.mock;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.mockito.BDDMockito.given;
-import static org.mockito.Mockito.mock;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import com.google.inject.Stage;
 
 public class GuiceInitialisationFilterTest {
 

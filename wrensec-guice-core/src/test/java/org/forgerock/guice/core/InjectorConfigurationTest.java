@@ -12,6 +12,7 @@
  * information: "Portions copyright [year] [name of copyright owner]".
  *
  * Copyright 2014-2015 ForgeRock AS.
+ * Portions Copyright 2021 Wren Security.
  */
 
 package org.forgerock.guice.core;
@@ -21,11 +22,12 @@ import static org.assertj.core.api.Assertions.assertThat;
 import java.lang.annotation.Annotation;
 import java.util.Set;
 
-import com.google.inject.Module;
-import com.google.inject.Stage;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import com.google.inject.Module;
+import com.google.inject.Stage;
 
 public class InjectorConfigurationTest {
 
@@ -34,6 +36,7 @@ public class InjectorConfigurationTest {
 
     @BeforeClass
     public void setUpClass() {
+        InjectorConfiguration.INSTANCE.resetDefaults();
         defaultAnnotation = InjectorConfiguration.getModuleAnnotation();
         defaultModuleLoader = InjectorConfiguration.getGuiceModuleLoader();
     }
@@ -126,4 +129,5 @@ public class InjectorConfigurationTest {
             return null;
         }
     }
+
 }

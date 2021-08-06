@@ -12,6 +12,7 @@
  * information: "Portions copyright [year] [name of copyright owner]".
  *
  * Copyright 2013-2015 ForgeRock AS.
+ * Portions Copyright 2021 Wren Security.
  */
 
 package org.forgerock.guice.core;
@@ -42,9 +43,25 @@ public enum InjectorConfiguration {
      */
     INSTANCE;
 
-    private volatile Class<? extends Annotation> moduleAnnotation = GuiceModule.class;
-    private volatile GuiceModuleLoader guiceModuleLoader = new GuiceModuleServiceLoader(new ServiceLoaderWrapper());
-    private volatile Stage stage = Stage.PRODUCTION;
+    private volatile Class<? extends Annotation> moduleAnnotation;
+    private volatile GuiceModuleLoader guiceModuleLoader;
+    private volatile Stage stage;
+
+    /**
+     * Reset configuration values to their defaults.
+     */
+    void resetDefaults() {
+        moduleAnnotation = GuiceModule.class;
+        guiceModuleLoader = new GuiceModuleServiceLoader(new ServiceLoaderWrapper());
+        stage = Stage.PRODUCTION;
+    }
+
+    /**
+     * Create new shared configuration instance.
+     */
+    private InjectorConfiguration() {
+        resetDefaults();
+    }
 
     /**
      * Gets the module annotation that all modules MUST be annotated with.
@@ -100,4 +117,5 @@ public enum InjectorConfiguration {
     public static void setStage(Stage stage) {
         INSTANCE.stage = stage;
     }
+
 }

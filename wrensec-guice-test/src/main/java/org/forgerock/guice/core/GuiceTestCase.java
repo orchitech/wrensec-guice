@@ -19,7 +19,6 @@ package org.forgerock.guice.core;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.google.inject.util.Modules;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -27,6 +26,7 @@ import com.google.inject.Binder;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.Module;
+import com.google.inject.util.Modules;
 
 /**
  * A test case that allows registration of guice modules for the life of each test method being run.

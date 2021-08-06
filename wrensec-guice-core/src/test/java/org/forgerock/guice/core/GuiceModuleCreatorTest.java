@@ -19,13 +19,14 @@ package org.forgerock.guice.core;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.failBecauseExceptionWasNotThrown;
 
-import com.google.inject.Binder;
-import com.google.inject.Module;
 import org.forgerock.guice.core.test.TestModule1;
 import org.forgerock.guice.core.test.TestModule2;
 import org.forgerock.guice.core.test.TestModule3;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import com.google.inject.Binder;
+import com.google.inject.Module;
 
 public class GuiceModuleCreatorTest {
 

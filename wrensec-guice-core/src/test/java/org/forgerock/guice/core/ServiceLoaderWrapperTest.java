@@ -18,13 +18,14 @@ package org.forgerock.guice.core;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.google.inject.AbstractModule;
-import com.google.inject.Module;
 import org.forgerock.guice.core.test.TestModule4;
 import org.forgerock.guice.core.test.TestModule5;
 import org.forgerock.guice.core.test.TestModule7;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import com.google.inject.AbstractModule;
+import com.google.inject.Module;
 
 public class ServiceLoaderWrapperTest {
 

@@ -18,17 +18,19 @@ package org.forgerock.guice.core;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import javax.inject.Inject;
 import java.lang.annotation.Annotation;
 import java.util.HashSet;
 import java.util.Set;
+
+import javax.inject.Inject;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Injector;
 import com.google.inject.Key;
 import com.google.inject.Module;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
 
 public class InjectorHolderTest {
 

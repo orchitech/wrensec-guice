@@ -21,11 +21,12 @@ import static org.assertj.core.api.Assertions.assertThat;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import org.testng.annotations.Test;
+
 import com.google.inject.Binder;
 import com.google.inject.Key;
 import com.google.inject.Module;
 import com.google.inject.TypeLiteral;
-import org.testng.annotations.Test;
 
 @GuiceModules({ GuiceTestCaseTest.ExtraModule.class })
 public class GuiceTestCaseTest extends GuiceTestCase {

@@ -19,7 +19,7 @@ package org.forgerock.guice.core.test;
 import com.google.inject.Binder;
 import com.google.inject.Module;
 
-public final class TestModule1 implements Module {
+public class TestModule1 implements Module {
 
     private TestModule1() {
     }

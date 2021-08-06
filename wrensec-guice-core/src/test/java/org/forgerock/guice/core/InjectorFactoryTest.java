@@ -17,6 +17,7 @@
 package org.forgerock.guice.core;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
@@ -25,13 +26,13 @@ import static org.mockito.internal.verification.VerificationModeFactory.times;
 import java.util.HashSet;
 import java.util.Set;
 
-import com.google.inject.Module;
 import org.forgerock.guice.core.test.TestModule1;
 import org.forgerock.guice.core.test.TestModule2;
 import org.mockito.ArgumentCaptor;
-import org.mockito.Matchers;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import com.google.inject.Module;
 
 public class InjectorFactoryTest {
 
@@ -72,7 +73,7 @@ public class InjectorFactoryTest {
         injectorFactory.createInjector(moduleAnnotation);
 
         //Then
-        verify(moduleCreator, times(2)).createInstance(Matchers.<Class<Module>>anyObject());
+        verify(moduleCreator, times(2)).createInstance(any(Class.class));
         ArgumentCaptor<Set> createInjectorCaptor = ArgumentCaptor.forClass(Set.class);
         verify(injectorCreator).createInjector(createInjectorCaptor.capture());
         Set<Module> modules = createInjectorCaptor.getValue();
