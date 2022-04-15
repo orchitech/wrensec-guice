@@ -24,7 +24,6 @@ public class TestModule4 extends AbstractModule {
 
     @Override
     protected void configure() {
-
     }
 
     @Override

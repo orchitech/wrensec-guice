@@ -12,7 +12,7 @@
  * information: "Portions copyright [year] [name of copyright owner]".
  *
  * Copyright 2014-2015 ForgeRock AS.
- * Portions Copyright 2021 Wren Security.
+ * Portions Copyright 2022 Wren Security.
  */
 
 package org.forgerock.guice.core;

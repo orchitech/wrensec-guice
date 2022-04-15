@@ -24,7 +24,6 @@ import org.forgerock.guice.core.GuiceModule;
 public class TestModule5 implements Module {
 
     public void configure(Binder binder) {
-
     }
 
     @Override

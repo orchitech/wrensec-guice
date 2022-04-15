@@ -7,8 +7,6 @@
 
 # 2.0.0
 
-## Changes
-
 ### Major
 
 * Updated Google Guice dependency from 3.0 to 4.0

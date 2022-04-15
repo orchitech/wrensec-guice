@@ -22,11 +22,9 @@ import com.google.inject.Module;
 public class TestModule2 implements Module {
 
     public TestModule2(int i) {
-
     }
 
     public TestModule2() {
-
     }
 
     public void configure(Binder binder) {

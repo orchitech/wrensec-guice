@@ -24,7 +24,6 @@ public class TestModule7 extends PrivateModule {
 
     @Override
     protected void configure() {
-
     }
 
     @Override

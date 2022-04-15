@@ -22,15 +22,12 @@ import com.google.inject.Module;
 public class TestModule3 implements Module {
 
     public TestModule3(Object o) {
-
     }
 
     private TestModule3() {
-
     }
 
     TestModule3(String s) {
-
     }
 
     public void configure(Binder binder) {
